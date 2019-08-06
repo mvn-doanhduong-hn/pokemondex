@@ -8,13 +8,16 @@
 
 import UIKit
 
-class PokemonViewController: UIViewController {
+class PokemonViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+     
+       
     }
 
+    
 
 }
 

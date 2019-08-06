@@ -1,5 +1,5 @@
 //
-//  ItemViewController.swift
+//  ItemsViewController.swift
 //  pokemondex
 //
 //  Created by MacMini2012 on 8/1/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemViewController: UIViewController {
+class ItemsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

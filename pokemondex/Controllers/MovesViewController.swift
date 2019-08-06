@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  MovesViewController.swift
 //  pokemondex
 //
 //  Created by MacMini2012 on 8/1/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoveViewController: UIViewController {
+class MovesViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

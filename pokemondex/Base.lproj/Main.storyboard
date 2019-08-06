@@ -32,7 +32,7 @@
         <!--Pokemon-->
         <scene sceneID="Lcu-W3-jZc">
             <objects>
-                <tableViewController id="uQs-q1-1vy" sceneMemberID="viewController">
+                <tableViewController id="uQs-q1-1vy" customClass="PokemonViewController" customModule="pokemondex" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BBN-4L-FP1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +244,7 @@
         <!--Moves-->
         <scene sceneID="Wvv-ga-rpY">
             <objects>
-                <tableViewController id="osr-cX-4wu" sceneMemberID="viewController">
+                <tableViewController id="osr-cX-4wu" customClass="MovesViewController" customModule="pokemondex" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RSu-gd-lwm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -413,7 +413,6 @@
                             <outlet property="delegate" destination="osr-cX-4wu" id="dfX-K6-uFR"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Moves" image="TabMoves" id="ycl-tY-BhQ"/>
                     <navigationItem key="navigationItem" title="Moves" id="TCZ-ZY-lXJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -424,7 +423,7 @@
         <!--Items-->
         <scene sceneID="PNR-nC-055">
             <objects>
-                <tableViewController id="YXK-o2-jHa" sceneMemberID="viewController">
+                <tableViewController id="YXK-o2-jHa" customClass="ItemsViewController" customModule="pokemondex" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="620-Sb-q55">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -567,6 +566,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Items" id="Kcc-Uo-cBK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NfS-uh-ItW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -591,11 +591,11 @@
             </objects>
             <point key="canvasLocation" x="1267" y="-836"/>
         </scene>
-        <!--Item-->
+        <!--Moves-->
         <scene sceneID="ZvF-hA-Ywq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="imP-GD-cJs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="p9I-qe-zXT"/>
+                    <tabBarItem key="tabBarItem" title="Moves" image="TabMoves" id="p9I-qe-zXT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GpX-6b-hbi">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -614,7 +614,7 @@
         <scene sceneID="3Yh-hY-UcR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AbF-kH-CW6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="c8X-Vy-197"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="TabItems" id="c8X-Vy-197"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sOh-e1-hUG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -634,6 +634,7 @@
         <image name="MasterBall" width="26" height="26"/>
         <image name="PokemonSquirtle" width="48" height="50"/>
         <image name="Price" width="9" height="16"/>
+        <image name="TabItems" width="28" height="28"/>
         <image name="TabMoves" width="26" height="26"/>
         <image name="TabPokemon" width="28" height="29"/>
         <image name="TypeWater" width="50" height="50"/>

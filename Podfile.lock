@@ -1,0 +1,50 @@
+PODS:
+  - HMSegmentedControl (1.5.3)
+  - Kingfisher (5.7.0)
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (0.6.1)
+  - MXSegmentedPager (3.3.0):
+    - HMSegmentedControl (= 1.5.3)
+    - MXPagerView (= 0.2.1)
+    - MXParallaxHeader (= 0.6.1)
+  - ObjectMapper (3.5.1)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+
+DEPENDENCIES:
+  - Kingfisher
+  - MXSegmentedPager
+  - ObjectMapper (~> 3.4)
+  - RxCocoa (~> 5.0.0)
+  - RxSwift (~> 5.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - HMSegmentedControl
+    - Kingfisher
+    - MXPagerView
+    - MXParallaxHeader
+    - MXSegmentedPager
+    - ObjectMapper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
+  MXSegmentedPager: a35ebaf939e1629f24db3bb26653c1c557362f59
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+
+PODFILE CHECKSUM: b6b6039be38a26bb7fc2691e08e4c9d878829522
+
+COCOAPODS: 1.7.5

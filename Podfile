@@ -10,7 +10,7 @@ target 'pokemondex' do
   pod 'RxCocoa', '~> 5.0.0'
   pod 'ObjectMapper', '~> 3.4'
   pod 'Kingfisher'
-  pod 'MXSegmentedPager'
+  pod 'MXSegmentedPager', '~> 3.3.0'
 
   target 'pokemondexTests' do
     inherit! :search_paths

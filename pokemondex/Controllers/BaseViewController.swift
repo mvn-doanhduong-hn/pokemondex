@@ -24,7 +24,7 @@ class BaseViewController: UITableViewController {
             gradient.startPoint = CGPoint(x: 0, y: 0)
             gradient.endPoint = CGPoint(x: 1, y: 0)
             
-            if let image = getImageFrom(gradientLayer: gradient) {
+            if let image = Utils.getImageFrom(gradientLayer: gradient) {
                 navigationBar.barTintColor = UIColor(patternImage: image)
                 if let tabBar = self.tabBarController?.tabBar {
                     tabBar.barTintColor = UIColor(patternImage: image)
@@ -47,17 +47,6 @@ class BaseViewController: UITableViewController {
         if #available(iOS 11.0, *) {
             navigationItem.hidesSearchBarWhenScrolling = true
         }
-    }
-    
-    func getImageFrom(gradientLayer:CAGradientLayer) -> UIImage? {
-        var gradientImage:UIImage?
-        UIGraphicsBeginImageContext(gradientLayer.frame.size)
-        if let context = UIGraphicsGetCurrentContext() {
-            gradientLayer.render(in: context)
-            gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch)
-        }
-        UIGraphicsEndImageContext()
-        return gradientImage
     }
     
     

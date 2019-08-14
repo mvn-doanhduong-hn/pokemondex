@@ -8,7 +8,7 @@ target 'pokemondex' do
   # Pods for pokemondex
   pod 'RxSwift', '~> 5.0.0'
   pod 'RxCocoa', '~> 5.0.0'
-  pod 'ObjectMapper', '~> 3.4'
+  pod 'AlamofireObjectMapper', '~> 5.2'
   pod 'Kingfisher'
   pod 'MXSegmentedPager', '~> 3.3.0'
 

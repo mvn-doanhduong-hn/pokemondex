@@ -1,4 +1,8 @@
 PODS:
+  - Alamofire (4.8.2)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
   - HMSegmentedControl (1.5.3)
   - Kingfisher (5.7.0)
   - MXPagerView (0.2.1)
@@ -16,14 +20,16 @@ PODS:
   - RxSwift (5.0.0)
 
 DEPENDENCIES:
+  - AlamofireObjectMapper (~> 5.2)
   - Kingfisher
   - MXSegmentedPager (~> 3.3.0)
-  - ObjectMapper (~> 3.4)
   - RxCocoa (~> 5.0.0)
   - RxSwift (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
     - HMSegmentedControl
     - Kingfisher
     - MXPagerView
@@ -35,6 +41,8 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
   MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
@@ -45,6 +53,6 @@ SPEC CHECKSUMS:
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: bf217815c4a948c0797a0c5edd9cfa0df237f68b
+PODFILE CHECKSUM: b50ea92454c2e24f5834e19cd581dff376d8fa18
 
 COCOAPODS: 1.7.5

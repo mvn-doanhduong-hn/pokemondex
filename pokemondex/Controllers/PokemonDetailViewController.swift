@@ -9,10 +9,13 @@
 import UIKit
 import MXSegmentedPager
 
-//class PokemonDetailViewController: UIViewController {
 class PokemonDetailViewController: MXSegmentedPagerController {
     
 //    @IBOutlet var headerView: UIView!
+    let titles = ["Stats", "Evolutions", "Moves"]
+    let images = [UIImage(named: "PageStatsSelected"), UIImage(named: "PageStatsSelected"), UIImage(named: "PageStatsSelected")]
+    let selectedImages = [UIImage(named: "PageStatsSelected"), UIImage(named: "PageStatsSelected"), UIImage(named: "PageStatsSelected")]
+    let viewPages = [StatsPageView(), EvolutionsPageView(), MovesPageView()]
     
     let pokemonHeaderView = PokemonHeaderView()
     
@@ -32,6 +35,9 @@ class PokemonDetailViewController: MXSegmentedPagerController {
         segmentedPager.parallaxHeader.minimumHeight = pokemonHeaderView.menuBarView.bounds.height
         
         // Segmented Control customization
+        segmentedPager.segmentedControl.sectionTitles = titles
+        segmentedPager.segmentedControl.sectionImages = images as [Any]
+        segmentedPager.segmentedControl.sectionSelectedImages = selectedImages as [Any]
         segmentedPager.segmentedControl.selectionIndicatorLocation = .down
         segmentedPager.segmentedControl.backgroundColor = .white
         segmentedPager.segmentedControl.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.blue]
@@ -39,12 +45,10 @@ class PokemonDetailViewController: MXSegmentedPagerController {
         segmentedPager.segmentedControl.selectionStyle = .fullWidthStripe
         segmentedPager.segmentedControl.selectionIndicatorColor = .orange
         
-       
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         segmentedPager.parallaxHeader.minimumHeight = pokemonHeaderView.menuBarView.bounds.height
     }
     
@@ -71,12 +75,22 @@ class PokemonDetailViewController: MXSegmentedPagerController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Asks the data source to return the number of pages in the segmented pager.
     override func numberOfPages(in segmentedPager: MXSegmentedPager) -> Int {
-        return 3
+        return titles.count
     }
     
     override func segmentedPager(_ segmentedPager: MXSegmentedPager, titleForSectionAt index: Int) -> String {
-        return ["Table", "Web", "Text"][index]
+        return ["STATS", "EVOLUTIONS", "MOVES"][index]
+    }
+
+    override func segmentedPager(_ segmentedPager: MXSegmentedPager, imageForSectionAt index: Int) -> UIImage {
+        return images[index]!
+    }
+    
+    // Asks the data source for a view to insert in a particular page of the pager.
+    override func segmentedPager(_ segmentedPager: MXSegmentedPager, viewForPageAt index: Int) -> UIView {
+        return viewPages[index];
     }
     
     override func segmentedPager(_ segmentedPager: MXSegmentedPager, didScrollWith parallaxHeader: MXParallaxHeader) {

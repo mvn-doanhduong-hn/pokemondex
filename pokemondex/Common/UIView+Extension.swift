@@ -118,12 +118,13 @@ extension UIView {
         layer.mask = maskLayer1
     }
     
-    /** Loads instance from nib with the same name. */
-    func loadNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
-        let nibName = type(of: self).description().components(separatedBy: ".").last!
-        let nib = UINib(nibName: nibName, bundle: bundle)
-        return nib.instantiate(withOwner: self, options: nil).first as! UIView
-    }
+//    func loadViewFromNib() -> UIView {
+//        let bundle = Bundle(for: type(of: self))
+//        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+//        guard let view = nib.instantiate(withOwner: self, options: nil)[0] as? UIView else {
+//            return UIView()
+//        }
+//        return view
+//    }
     
 }

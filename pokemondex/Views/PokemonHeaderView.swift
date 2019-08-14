@@ -8,29 +8,18 @@
 
 import UIKit
 
-class PokemonHeaderView: UIView {
+class PokemonHeaderView: NibView {
 
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var roundCornerView: UIView!
     @IBOutlet weak var menuBarView: UIView!
     @IBOutlet weak var pokemonMenuLabel: UILabel!
-    var view : UIView!
     
     convenience init() {
-        self.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 460))
+        self.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 440))
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        xibSetUp()
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        xibSetUp()
-    }
-    
-    fileprivate func xibSetUp() {
+    override func xibSetUp() {
         view = loadViewFromNib()
         view.frame = self.bounds
         view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
@@ -38,15 +27,6 @@ class PokemonHeaderView: UIView {
         setRoundCornerView()
         
         addSubview(view)
-    }
-    
-    func loadViewFromNib() -> UIView {
-        let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
-        guard let view = nib.instantiate(withOwner: self, options: nil)[0] as? UIView else {
-            return UIView()
-        }
-        return view
     }
     
     func setBackgroundColor() {

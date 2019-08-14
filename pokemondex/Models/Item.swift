@@ -8,23 +8,11 @@
 
 import ObjectMapper
 
-class Item:  Mappable {
-    var name: String?
-    var price: Float?
-    var image: String!
-    var effects: String?
-    
-    required init?(map: Map) {
-        
-    }
-    
-    // Mappable
-    func mapping(map: Map) {
-        name            <- map["name"]
-        price           <- map["price"]
-        image           <- map["image"]
-        effects         <- map["effects"]
-    }
+struct Item {
+    var name: String
+    var price: Float
+    var image: String
+    var effects: String
 }
 
 

@@ -9,13 +9,16 @@
 import ObjectMapper
 
 class ApiPokemon {
-    required public init?(map: Map) {}
     
     var pokemonId = ""
     var name = ""
     var image = ""
     var description = ""
     var pokemonTypes = [String]()
+    
+    required public init?(map: Map) {
+        
+    }
     
     func convert() -> Pokemon {
         return Pokemon(

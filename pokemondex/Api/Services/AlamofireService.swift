@@ -10,13 +10,11 @@ import Alamofire
 
 class AlamofireService {
     
-    init(context: ApiContext) {
-        self.context = context
-    }
-    
-    
     var context: ApiContext
     
+    init(context: ApiContext) {
+        self.context = context
+    }    
     
     func get(at route: ApiRoute) -> DataRequest {
         return request(at: route, method: .get, encoding: URLEncoding.default)

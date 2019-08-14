@@ -9,4 +9,5 @@
 protocol ApiContext {
     
     var environment: ApiEnvironment { get set }
+    
 }

@@ -13,13 +13,13 @@ enum ApiRoute { case
     
     pokemons,
     searchPokemons(name: String),
-    pokemonDetail(id: String),
+    pokemon(id: String),
     items,
     searchItems(name: String),
-    itemDetail(name: String),
+    item(name: String),
     moves,
     searchMoves(name: String),
-    moveDetail(name: String)
+    move(name: String)
     
     var path: String {
         switch self {
@@ -27,19 +27,19 @@ enum ApiRoute { case
             return "pokemons"
         case .searchPokemons(let name):
             return "pokemons/search/\(name)"
-        case .pokemonDetail(let id):
+        case .pokemon(let id):
             return "pokemons/\(id)"
         case .items:
             return "items"
         case .searchItems(let name):
             return "items/search/\(name)"
-        case .itemDetail(let name):
+        case .item(let name):
             return "items/\(name)"
         case .moves:
             return "moves"
         case .searchMoves(let name):
             return "moves/search/\(name)"
-        case .moveDetail(let name):
+        case .move(let name):
             return "moves/\(name)"
         }
     }

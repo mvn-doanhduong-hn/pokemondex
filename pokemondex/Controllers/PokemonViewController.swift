@@ -13,7 +13,16 @@ class PokemonViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     
+        let env = ApiEnvironment.production
+        let context = NonPersistentApiContext(environment: env)
+        let service = AlamofirePokemonService(context: context)
+        service.getPokemons { (pokemons, error) in
+            if let error = error {
+                return print(error.localizedDescription)
+            }
+            print("Found \(pokemons.count) pokemons:")
+            pokemons.forEach { print("   \($0.name)") }
+        }
        
     }
 

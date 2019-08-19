@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pokemondex/Controllers/PokemonViewController.swift"
+            timestampString = "587909416.7262371"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "fetchResults(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pokemondex.PokemonViewController.fetchResults(for: Swift.String) -&gt; ()"
+                  moduleName = "pokemondex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ltt/Documents/Project/pokemondex/pokemondex/Controllers/PokemonViewController.swift"
+                  timestampString = "587908837.916718"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "246">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;pokemondex.Pokemon&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in pokemondex.PokemonViewController.fetchResults(for: Swift.String) -&gt; ()"
+                  moduleName = "pokemondex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ltt/Documents/Project/pokemondex/pokemondex/Controllers/PokemonViewController.swift"
+                  timestampString = "587908837.921255"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pokemondex/Api/Services/AlamofirePokemonService.swift"
+            timestampString = "587908922.713611"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "searchPokemon(name:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pokemondex.AlamofirePokemonService.searchPokemon(name: Swift.String, completion: (Swift.Array&lt;pokemondex.Pokemon&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "pokemondex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ltt/Documents/Project/pokemondex/pokemondex/Api/Services/AlamofirePokemonService.swift"
+                  timestampString = "587908922.720989"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.Array&lt;pokemondex.ApiPokemon&gt;&gt;) -&gt; () in pokemondex.AlamofirePokemonService.searchPokemon(name: Swift.String, completion: (Swift.Array&lt;pokemondex.Pokemon&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "pokemondex"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ltt/Documents/Project/pokemondex/pokemondex/Api/Services/AlamofirePokemonService.swift"
+                  timestampString = "587908922.723781"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

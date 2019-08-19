@@ -26,19 +26,19 @@ enum ApiRoute { case
         case .pokemons:
             return "pokemons"
         case .searchPokemons(let name):
-            return "pokemons/search/\(name)"
+            return "pokemons/search?name=\(name)"
         case .pokemon(let id):
             return "pokemons/\(id)"
         case .items:
             return "items"
         case .searchItems(let name):
-            return "items/search/\(name)"
+            return "items/search?name=\(name)"
         case .item(let name):
             return "items/\(name)"
         case .moves:
             return "moves"
         case .searchMoves(let name):
-            return "moves/search/\(name)"
+            return "moves/search?name=\(name)"
         case .move(let name):
             return "moves/\(name)"
         }

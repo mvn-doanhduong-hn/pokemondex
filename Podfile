@@ -11,6 +11,7 @@ target 'pokemondex' do
   pod 'AlamofireObjectMapper', '~> 5.2'
   pod 'Kingfisher'
   pod 'MXSegmentedPager', '~> 3.3.0'
+  pod 'AlamofireImage', '~> 3.5'
 
   target 'pokemondexTests' do
     inherit! :search_paths

@@ -7,15 +7,27 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class BaseViewController: UITableViewController {
+    
+    var searchBar: UISearchController!
+    var searchResults: [Any] = []
+    private var previousRun = Date()
+    private let minInterval = 0.05
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let searchBar = UISearchController(searchResultsController: nil)
+        setupSearchBar()
+    }
+    
+    private func setupSearchBar() {
+        searchBar = UISearchController(searchResultsController: nil)
+    
         if let navigationBar = self.navigationController?.navigationBar {
-            
+    
             let gradient = CAGradientLayer()
             var bounds = navigationBar.bounds
             bounds.size.height += UIApplication.shared.statusBarFrame.size.height
@@ -23,7 +35,7 @@ class BaseViewController: UITableViewController {
             gradient.colors = [UIColor.init(hexString: "dee8fa").cgColor, UIColor.init(hexString: "d8f5da").cgColor]
             gradient.startPoint = CGPoint(x: 0, y: 0)
             gradient.endPoint = CGPoint(x: 1, y: 0)
-            
+    
             if let image = Utils.getImageFrom(gradientLayer: gradient) {
                 navigationBar.barTintColor = UIColor(patternImage: image)
                 if let tabBar = self.tabBarController?.tabBar {
@@ -33,6 +45,7 @@ class BaseViewController: UITableViewController {
             }
         }
         navigationItem.searchController = searchBar
+        navigationItem.searchController?.searchBar.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,5 +62,24 @@ class BaseViewController: UITableViewController {
         }
     }
     
+    func fetchResults(for text: String) {
+        
+    }
+}
+
+extension BaseViewController: UISearchBarDelegate {
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchResults.removeAll()
+        
+        if Date().timeIntervalSince(previousRun) > minInterval {
+            previousRun = Date()
+            fetchResults(for: searchBar.text ?? "")
+        }
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchResults.removeAll()
+    }
 }

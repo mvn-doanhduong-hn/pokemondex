@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25AE77C6230A574F00D34715 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AE77C5230A574F00D34715 /* PokemonTableViewCell.swift */; };
 		5E9E799493FC2E70B449DD55 /* Pods_pokemondexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE2D80CFBE989F104C4EDA0 /* Pods_pokemondexTests.framework */; };
 		731E977922F97C2F0028474C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E977822F97C2F0028474C /* UIColor+Extension.swift */; };
 		731E977C22F97D9D0028474C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731E977B22F97D9D0028474C /* BaseViewController.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25AE77C5230A574F00D34715 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
 		4B7D4175708B55C149362520 /* Pods-pokemondexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemondexUITests.debug.xcconfig"; path = "Target Support Files/Pods-pokemondexUITests/Pods-pokemondexUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6036EF0CC7F684F550A75B00 /* Pods_pokemondex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokemondex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6278D5FE46B192953BB9C641 /* Pods-pokemondex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokemondex.debug.xcconfig"; path = "Target Support Files/Pods-pokemondex/Pods-pokemondex.debug.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				731E97A322FBD1A20028474C /* MovesPageView.xib */,
 				731E97A522FBD2270028474C /* NibView.swift */,
 				731E97AB22FC01EF0028474C /* LinearProgressView.swift */,
+				25AE77C5230A574F00D34715 /* PokemonTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				9A34CC8F230452BE00B4B6C6 /* ApiMove.swift in Sources */,
 				9A34CC9F23045B3400B4B6C6 /* AlamofireItemService.swift in Sources */,
 				731E979922FBCB300028474C /* EvolutionsPageView.swift in Sources */,
+				25AE77C6230A574F00D34715 /* PokemonTableViewCell.swift in Sources */,
 				73FA11522303B8D80010AD7F /* ApiEnvironment.swift in Sources */,
 				73FA11542303B9140010AD7F /* ApiRoute.swift in Sources */,
 				73FA11562303F9D50010AD7F /* Item.swift in Sources */,

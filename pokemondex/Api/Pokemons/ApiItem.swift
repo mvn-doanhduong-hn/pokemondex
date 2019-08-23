@@ -11,7 +11,7 @@ import ObjectMapper
 class ApiItem {
     
     var name = ""
-    var price = Float(0)
+    var price = Int(0)
     var image = ""
     var effects = ""
     

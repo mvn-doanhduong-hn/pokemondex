@@ -13,5 +13,5 @@ struct Pokemon {
     var name: String
     var image: String
     var description: String
-    var pokemonTypes: [String]    
+    var pokemonTypes: [PokemonType]    
 }

@@ -10,7 +10,7 @@ import ObjectMapper
 
 struct Move {
     var name: String
-    var type: String
+    var type: PokemonType
     var effects: String
     var power: Int
     var accuracy: String

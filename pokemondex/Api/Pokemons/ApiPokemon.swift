@@ -14,7 +14,7 @@ class ApiPokemon {
     var name = ""
     var image = ""
     var description = ""
-    var pokemonTypes = [String]()
+    var pokemonTypes = [PokemonType]()
     
     required public init?(map: Map) {
         

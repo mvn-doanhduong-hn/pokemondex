@@ -10,7 +10,7 @@ import ObjectMapper
 
 struct Item {
     var name: String
-    var price: Float
+    var price: Int
     var image: String
     var effects: String
 }

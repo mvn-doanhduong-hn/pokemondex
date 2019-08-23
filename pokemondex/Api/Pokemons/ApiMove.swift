@@ -23,7 +23,7 @@ class ApiMove {
     func convert() -> Move {
         return Move(
             name: name,
-            type: type,
+            type: PokemonType(rawValue: type) ?? PokemonType.normal,
             effects: effects,
             power: power,
             accuracy: accuracy,

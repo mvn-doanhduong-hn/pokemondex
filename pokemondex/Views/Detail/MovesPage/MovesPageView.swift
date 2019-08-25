@@ -12,7 +12,7 @@ class MovesPageView: NibView {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var moves: [Move] = [Move(name: "Bug", type: PokemonType.bug, effects: "This is a effects", power: 10, accuracy: "100", pp: 5)]
+    var moves: [Move] = []
     
     override func xibSetUp() {
         view = loadViewFromNib()
@@ -51,7 +51,6 @@ extension MovesPageView: UITableViewDelegate, UITableViewDataSource {
         cell.levelLabel.text = "Level 1"
         
         return cell
-    }
-    
+    }   
     
 }

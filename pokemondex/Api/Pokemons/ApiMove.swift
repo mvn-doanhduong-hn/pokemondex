@@ -13,7 +13,7 @@ class ApiMove {
     var type = ""
     var effects = ""
     var power = 0
-    var accuracy = ""
+    var accuracy = 0
     var pp = 0
     
     required init?(map: Map) {

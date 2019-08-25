@@ -41,6 +41,8 @@ class ItemsViewController: BaseViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let detailViewController = storyBoard.instantiateViewController(withIdentifier: "itemDetailViewController") as! ItemDetailViewController
+        let item = searchResults[indexPath.row] as! Item
+        detailViewController.item = item
         self.present(detailViewController, animated: true, completion: nil)
     }
     

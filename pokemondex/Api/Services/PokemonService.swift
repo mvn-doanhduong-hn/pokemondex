@@ -8,10 +8,11 @@
 
 typealias PokemonResult = (_ pokemon: Pokemon?, _ error: Error?) -> ()
 typealias PokemonsResult = (_ pokemons: [Pokemon], _ error: Error?) -> ()
+typealias PokemonDetailResult = (_ pokemonDetail: ApiPokemonDetail?, _ error: Error?) -> ()
 
 protocol PokemonService: class {
     
-    func getPokemon(id: String, completion: @escaping PokemonResult)
+    func getPokemon(id: String, completion: @escaping PokemonDetailResult)
     
     func getPokemons(completion: @escaping PokemonsResult)
     

@@ -36,4 +36,9 @@ enum PokemonType: String {
     var image: String {
         return "type_\(value).png"
     }
+    
+    var imageWithText: String {
+        return "type_\(value)_text.png"
+    }
+    
 }

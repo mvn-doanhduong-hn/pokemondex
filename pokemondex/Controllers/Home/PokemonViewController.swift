@@ -39,11 +39,9 @@ class PokemonViewController: BaseViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "pokemonCell", for: indexPath) as! PokemonTableViewCell
-        
         let pokemon = searchResults[indexPath.row] as! Pokemon
-       
         let nextViewController = PokemonDetailViewController()
+        nextViewController.pokemon = pokemon
         self.present(nextViewController, animated:true, completion:nil)
     }
 

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Pokemondex. All rights reserved.
 //
 
-import ObjectMapper
+import Foundation
 
 struct Item {
     var name: String

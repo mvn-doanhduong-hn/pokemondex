@@ -26,21 +26,26 @@ enum ApiRoute { case
         case .pokemons:
             return "pokemons"
         case .searchPokemons(let name):
-            return "pokemons/search?name=\(name)"
+            let newName = name.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+            return "pokemons/search?name=\(newName)"
         case .pokemon(let id):
             return "pokemons/\(id)"
         case .items:
             return "items"
         case .searchItems(let name):
-            return "items/search?name=\(name)"
+             let newName = name.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+            return "items/search?name=\(newName)"
         case .item(let name):
-            return "items/\(name)"
+             let newName = name.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+            return "items/\(newName)"
         case .moves:
             return "moves"
         case .searchMoves(let name):
-            return "moves/search?name=\(name)"
+             let newName = name.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+            return "moves/search?name=\(newName)"
         case .move(let name):
-            return "moves/\(name)"
+             let newName = name.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+            return "moves/\(newName)"
         }
     }
     

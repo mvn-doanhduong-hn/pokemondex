@@ -7,13 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25095F7D230EE51E00E8EEFA /* EvolutionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25095F7C230EE51E00E8EEFA /* EvolutionView.xib */; };
-		25095F7F230EE5DA00E8EEFA /* EvolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25095F7E230EE5DA00E8EEFA /* EvolutionView.swift */; };
+		25007C9F23127BC6009E152A /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25007C9E23127BC6009E152A /* PokemonDetail.swift */; };
+		25007CA123127C03009E152A /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25007CA023127C03009E152A /* Stats.swift */; };
+		25007CA323127D43009E152A /* PokemonMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25007CA223127D43009E152A /* PokemonMove.swift */; };
+		25007CA523127E0C009E152A /* ApiPokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25007CA423127E0C009E152A /* ApiPokemonDetail.swift */; };
+		25007CA723129D05009E152A /* PokemonDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25007CA623129D05009E152A /* PokemonDetailResponse.swift */; };
+		25044DAE2310B29800661527 /* WeaknessesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25044DAC2310B29800661527 /* WeaknessesCollectionViewCell.swift */; };
+		25044DAF2310B29800661527 /* WeaknessesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25044DAD2310B29800661527 /* WeaknessesCollectionViewCell.xib */; };
+		25044DB12310B2BB00661527 /* WeaknessesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25044DB02310B2BB00661527 /* WeaknessesView.swift */; };
+		25044DB32310B2CE00661527 /* WeaknessesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25044DB22310B2CE00661527 /* WeaknessesView.xib */; };
+		25044DB52310BD9D00661527 /* Weakness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25044DB42310BD9D00661527 /* Weakness.swift */; };
+		25044DB72310E03100661527 /* AbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25044DB62310E03100661527 /* AbilitiesView.swift */; };
+		25044DB92310E04800661527 /* AbilitiesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25044DB82310E04800661527 /* AbilitiesView.xib */; };
+		25044DBB2310E52F00661527 /* BreedingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25044DBA2310E52F00661527 /* BreedingView.swift */; };
+		25044DBD2310E53B00661527 /* BreedingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25044DBC2310E53B00661527 /* BreedingView.xib */; };
+		25044DBF231148CA00661527 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25044DBE231148CA00661527 /* UIScrollView+Extension.swift */; };
+		25044DC12311644800661527 /* HatchTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25044DC02311644800661527 /* HatchTime.swift */; };
+		25044DC32311648800661527 /* Breeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25044DC22311648800661527 /* Breeding.swift */; };
+		2509326A23121E7F00245774 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2509326923121E7F00245774 /* UIImage+Extension.swift */; };
 		25A79DF7230F8C68007C0FFE /* MovePageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A79DF5230F8C68007C0FFE /* MovePageTableViewCell.swift */; };
 		25A79DF8230F8C68007C0FFE /* MovePageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A79DF6230F8C68007C0FFE /* MovePageTableViewCell.xib */; };
-		25A79DFA230FC44D007C0FFE /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A79DF9230FC44D007C0FFE /* StatsView.swift */; };
-		25A79DFC230FC465007C0FFE /* StatsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A79DFB230FC465007C0FFE /* StatsView.xib */; };
+		25A79DFA230FC44D007C0FFE /* BasicStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A79DF9230FC44D007C0FFE /* BasicStatsView.swift */; };
+		25A79DFC230FC465007C0FFE /* BasicStatsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A79DFB230FC465007C0FFE /* BasicStatsView.xib */; };
 		25AE77C6230A574F00D34715 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AE77C5230A574F00D34715 /* PokemonTableViewCell.swift */; };
+		25B2F68D231041CE00B63C0A /* EvolutionPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2F68B231041CE00B63C0A /* EvolutionPageTableViewCell.swift */; };
+		25B2F68E231041CE00B63C0A /* EvolutionPageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B2F68C231041CE00B63C0A /* EvolutionPageTableViewCell.xib */; };
+		25B2F6902310449600B63C0A /* Evolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2F68F2310449600B63C0A /* Evolution.swift */; };
+		25B2F69623104B5C00B63C0A /* BasicStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2F69523104B5C00B63C0A /* BasicStats.swift */; };
+		25B2F69923104EDE00B63C0A /* BasicStatsViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2F69723104EDE00B63C0A /* BasicStatsViewTableViewCell.swift */; };
+		25B2F69A23104EDE00B63C0A /* BasicStatsViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B2F69823104EDE00B63C0A /* BasicStatsViewTableViewCell.xib */; };
 		25B46AAC230BAB4100F5C97C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B46AAB230BAB4100F5C97C /* ItemTableViewCell.swift */; };
 		25B46AAE230BAB4F00F5C97C /* MoveTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B46AAD230BAB4F00F5C97C /* MoveTableViewCell.swift */; };
 		25B46AB0230BAEFE00F5C97C /* PokemonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B46AAF230BAEFE00F5C97C /* PokemonType.swift */; };
@@ -83,13 +105,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		25095F7C230EE51E00E8EEFA /* EvolutionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvolutionView.xib; sourceTree = "<group>"; };
-		25095F7E230EE5DA00E8EEFA /* EvolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionView.swift; sourceTree = "<group>"; };
+		25007C9E23127BC6009E152A /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
+		25007CA023127C03009E152A /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		25007CA223127D43009E152A /* PokemonMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMove.swift; sourceTree = "<group>"; };
+		25007CA423127E0C009E152A /* ApiPokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPokemonDetail.swift; sourceTree = "<group>"; };
+		25007CA623129D05009E152A /* PokemonDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailResponse.swift; sourceTree = "<group>"; };
+		25044DAC2310B29800661527 /* WeaknessesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaknessesCollectionViewCell.swift; sourceTree = "<group>"; };
+		25044DAD2310B29800661527 /* WeaknessesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeaknessesCollectionViewCell.xib; sourceTree = "<group>"; };
+		25044DB02310B2BB00661527 /* WeaknessesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeaknessesView.swift; sourceTree = "<group>"; };
+		25044DB22310B2CE00661527 /* WeaknessesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeaknessesView.xib; sourceTree = "<group>"; };
+		25044DB42310BD9D00661527 /* Weakness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weakness.swift; sourceTree = "<group>"; };
+		25044DB62310E03100661527 /* AbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesView.swift; sourceTree = "<group>"; };
+		25044DB82310E04800661527 /* AbilitiesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AbilitiesView.xib; sourceTree = "<group>"; };
+		25044DBA2310E52F00661527 /* BreedingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedingView.swift; sourceTree = "<group>"; };
+		25044DBC2310E53B00661527 /* BreedingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedingView.xib; sourceTree = "<group>"; };
+		25044DBE231148CA00661527 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		25044DC02311644800661527 /* HatchTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HatchTime.swift; sourceTree = "<group>"; };
+		25044DC22311648800661527 /* Breeding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breeding.swift; sourceTree = "<group>"; };
+		2509326923121E7F00245774 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		25A79DF5230F8C68007C0FFE /* MovePageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovePageTableViewCell.swift; sourceTree = "<group>"; };
 		25A79DF6230F8C68007C0FFE /* MovePageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovePageTableViewCell.xib; sourceTree = "<group>"; };
-		25A79DF9230FC44D007C0FFE /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
-		25A79DFB230FC465007C0FFE /* StatsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatsView.xib; sourceTree = "<group>"; };
+		25A79DF9230FC44D007C0FFE /* BasicStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStatsView.swift; sourceTree = "<group>"; };
+		25A79DFB230FC465007C0FFE /* BasicStatsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicStatsView.xib; sourceTree = "<group>"; };
 		25AE77C5230A574F00D34715 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		25B2F68B231041CE00B63C0A /* EvolutionPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionPageTableViewCell.swift; sourceTree = "<group>"; };
+		25B2F68C231041CE00B63C0A /* EvolutionPageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EvolutionPageTableViewCell.xib; sourceTree = "<group>"; };
+		25B2F68F2310449600B63C0A /* Evolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution.swift; sourceTree = "<group>"; };
+		25B2F69523104B5C00B63C0A /* BasicStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStats.swift; sourceTree = "<group>"; };
+		25B2F69723104EDE00B63C0A /* BasicStatsViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicStatsViewTableViewCell.swift; sourceTree = "<group>"; };
+		25B2F69823104EDE00B63C0A /* BasicStatsViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicStatsViewTableViewCell.xib; sourceTree = "<group>"; };
 		25B46AAB230BAB4100F5C97C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		25B46AAD230BAB4F00F5C97C /* MoveTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveTableViewCell.swift; sourceTree = "<group>"; };
 		25B46AAF230BAEFE00F5C97C /* PokemonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonType.swift; sourceTree = "<group>"; };
@@ -240,8 +284,18 @@
 			children = (
 				731E979322FBCAD30028474C /* StatsPageView.swift */,
 				731E979F22FBD10F0028474C /* StatsPageView.xib */,
-				25A79DF9230FC44D007C0FFE /* StatsView.swift */,
-				25A79DFB230FC465007C0FFE /* StatsView.xib */,
+				25A79DF9230FC44D007C0FFE /* BasicStatsView.swift */,
+				25A79DFB230FC465007C0FFE /* BasicStatsView.xib */,
+				25B2F69723104EDE00B63C0A /* BasicStatsViewTableViewCell.swift */,
+				25B2F69823104EDE00B63C0A /* BasicStatsViewTableViewCell.xib */,
+				25044DB02310B2BB00661527 /* WeaknessesView.swift */,
+				25044DB22310B2CE00661527 /* WeaknessesView.xib */,
+				25044DAC2310B29800661527 /* WeaknessesCollectionViewCell.swift */,
+				25044DAD2310B29800661527 /* WeaknessesCollectionViewCell.xib */,
+				25044DB62310E03100661527 /* AbilitiesView.swift */,
+				25044DB82310E04800661527 /* AbilitiesView.xib */,
+				25044DBA2310E52F00661527 /* BreedingView.swift */,
+				25044DBC2310E53B00661527 /* BreedingView.xib */,
 			);
 			path = StatsPage;
 			sourceTree = "<group>";
@@ -251,8 +305,8 @@
 			children = (
 				731E979722FBCB300028474C /* EvolutionsPageView.swift */,
 				731E97A122FBD16A0028474C /* EvolutionsPageView.xib */,
-				25095F7E230EE5DA00E8EEFA /* EvolutionView.swift */,
-				25095F7C230EE51E00E8EEFA /* EvolutionView.xib */,
+				25B2F68B231041CE00B63C0A /* EvolutionPageTableViewCell.swift */,
+				25B2F68C231041CE00B63C0A /* EvolutionPageTableViewCell.xib */,
 			);
 			path = EvolutionsPage;
 			sourceTree = "<group>";
@@ -274,6 +328,8 @@
 				731E977822F97C2F0028474C /* UIColor+Extension.swift */,
 				731E978622FA79120028474C /* Utils.swift */,
 				731E978822FA7D120028474C /* UIView+Extension.swift */,
+				25044DBE231148CA00661527 /* UIScrollView+Extension.swift */,
+				2509326923121E7F00245774 /* UIImage+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -361,6 +417,14 @@
 				73FA11552303F9D50010AD7F /* Item.swift */,
 				73FA11572303FDBB0010AD7F /* Move.swift */,
 				25B46AAF230BAEFE00F5C97C /* PokemonType.swift */,
+				25B2F68F2310449600B63C0A /* Evolution.swift */,
+				25B2F69523104B5C00B63C0A /* BasicStats.swift */,
+				25044DB42310BD9D00661527 /* Weakness.swift */,
+				25044DC02311644800661527 /* HatchTime.swift */,
+				25044DC22311648800661527 /* Breeding.swift */,
+				25007C9E23127BC6009E152A /* PokemonDetail.swift */,
+				25007CA023127C03009E152A /* Stats.swift */,
+				25007CA223127D43009E152A /* PokemonMove.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -397,6 +461,8 @@
 				73FA116123040D3F0010AD7F /* ApiPokemon.swift */,
 				9A34CC8C2304522500B4B6C6 /* ApiItem.swift */,
 				9A34CC8E230452BE00B4B6C6 /* ApiMove.swift */,
+				25007CA423127E0C009E152A /* ApiPokemonDetail.swift */,
+				25007CA623129D05009E152A /* PokemonDetailResponse.swift */,
 			);
 			path = Pokemons;
 			sourceTree = "<group>";
@@ -531,16 +597,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25A79DFC230FC465007C0FFE /* StatsView.xib in Resources */,
+				25A79DFC230FC465007C0FFE /* BasicStatsView.xib in Resources */,
 				73F8E3B022F2D5E00020C0D0 /* LaunchScreen.storyboard in Resources */,
+				25044DAF2310B29800661527 /* WeaknessesCollectionViewCell.xib in Resources */,
+				25044DBD2310E53B00661527 /* BreedingView.xib in Resources */,
 				731E97A222FBD16A0028474C /* EvolutionsPageView.xib in Resources */,
-				25095F7D230EE51E00E8EEFA /* EvolutionView.xib in Resources */,
 				731E97A422FBD1A20028474C /* MovesPageView.xib in Resources */,
 				73F8E3AD22F2D5E00020C0D0 /* Assets.xcassets in Resources */,
+				25B2F68E231041CE00B63C0A /* EvolutionPageTableViewCell.xib in Resources */,
+				25044DB92310E04800661527 /* AbilitiesView.xib in Resources */,
+				25044DB32310B2CE00661527 /* WeaknessesView.xib in Resources */,
 				73F8E3AB22F2D5DF0020C0D0 /* Main.storyboard in Resources */,
 				731E978522FA73F10028474C /* PokemonHeaderView.xib in Resources */,
 				731E97A022FBD10F0028474C /* StatsPageView.xib in Resources */,
 				25A79DF8230F8C68007C0FFE /* MovePageTableViewCell.xib in Resources */,
+				25B2F69A23104EDE00B63C0A /* BasicStatsViewTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,43 +722,60 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25044DB52310BD9D00661527 /* Weakness.swift in Sources */,
+				25007CA123127C03009E152A /* Stats.swift in Sources */,
+				25B2F69623104B5C00B63C0A /* BasicStats.swift in Sources */,
 				9A34CC952304579000B4B6C6 /* ItemService.swift in Sources */,
 				25B99A0C230CFC2000EF2CCB /* MoveDetailViewController.swift in Sources */,
 				73FA11582303FDBB0010AD7F /* Move.swift in Sources */,
 				73FA114F2303B6C90010AD7F /* Pokemon.swift in Sources */,
+				25007CA523127E0C009E152A /* ApiPokemonDetail.swift in Sources */,
 				73F8E3A822F2D5DF0020C0D0 /* MovesViewController.swift in Sources */,
 				73FA115F230405290010AD7F /* AlamofireService.swift in Sources */,
 				731E978D22FAB8B10028474C /* PokemonHeaderView.swift in Sources */,
 				73FA116223040D3F0010AD7F /* ApiPokemon.swift in Sources */,
 				731E979D22FBCB4D0028474C /* MovesPageView.swift in Sources */,
 				9A34CC9D230459CC00B4B6C6 /* AlamofirePokemonService.swift in Sources */,
+				25007CA323127D43009E152A /* PokemonMove.swift in Sources */,
 				25B99A0E230CFD3A00EF2CCB /* BaseDetailViewController.swift in Sources */,
 				73F8E3D422F2DA7E0020C0D0 /* ItemsViewController.swift in Sources */,
 				73F8E3A422F2D5DF0020C0D0 /* AppDelegate.swift in Sources */,
-				25095F7F230EE5DA00E8EEFA /* EvolutionView.swift in Sources */,
 				731E978922FA7D120028474C /* UIView+Extension.swift in Sources */,
 				9A34CCA123045BC100B4B6C6 /* AlamofireMoveService.swift in Sources */,
+				25B2F68D231041CE00B63C0A /* EvolutionPageTableViewCell.swift in Sources */,
 				731E97A622FBD2270028474C /* NibView.swift in Sources */,
 				25B46AB0230BAEFE00F5C97C /* PokemonType.swift in Sources */,
 				73F8E3A622F2D5DF0020C0D0 /* PokemonViewController.swift in Sources */,
+				25044DC32311648800661527 /* Breeding.swift in Sources */,
+				25B2F69923104EDE00B63C0A /* BasicStatsViewTableViewCell.swift in Sources */,
 				9A34CC8D2304522500B4B6C6 /* ApiItem.swift in Sources */,
 				731E978422FA73F10028474C /* PokemonDetailViewController.swift in Sources */,
 				9A34CC8F230452BE00B4B6C6 /* ApiMove.swift in Sources */,
 				9A34CC9F23045B3400B4B6C6 /* AlamofireItemService.swift in Sources */,
+				25044DBF231148CA00661527 /* UIScrollView+Extension.swift in Sources */,
+				25B2F6902310449600B63C0A /* Evolution.swift in Sources */,
+				25044DC12311644800661527 /* HatchTime.swift in Sources */,
 				731E979922FBCB300028474C /* EvolutionsPageView.swift in Sources */,
+				25044DAE2310B29800661527 /* WeaknessesCollectionViewCell.swift in Sources */,
 				25AE77C6230A574F00D34715 /* PokemonTableViewCell.swift in Sources */,
-				25A79DFA230FC44D007C0FFE /* StatsView.swift in Sources */,
+				25A79DFA230FC44D007C0FFE /* BasicStatsView.swift in Sources */,
+				25007C9F23127BC6009E152A /* PokemonDetail.swift in Sources */,
+				25044DB72310E03100661527 /* AbilitiesView.swift in Sources */,
 				73FA11522303B8D80010AD7F /* ApiEnvironment.swift in Sources */,
 				73FA11542303B9140010AD7F /* ApiRoute.swift in Sources */,
 				73FA11562303F9D50010AD7F /* Item.swift in Sources */,
 				731E977C22F97D9D0028474C /* BaseViewController.swift in Sources */,
 				731E979522FBCAD30028474C /* StatsPageView.swift in Sources */,
+				25044DBB2310E52F00661527 /* BreedingView.swift in Sources */,
+				25044DB12310B2BB00661527 /* WeaknessesView.swift in Sources */,
 				731E977922F97C2F0028474C /* UIColor+Extension.swift in Sources */,
 				73FA115D2304050B0010AD7F /* NonPersistentApiContext.swift in Sources */,
 				9A34CC93230456F200B4B6C6 /* PokemonService.swift in Sources */,
 				731E978722FA79120028474C /* Utils.swift in Sources */,
 				25B99A0A230CFC1000EF2CCB /* ItemDetailViewController.swift in Sources */,
+				25007CA723129D05009E152A /* PokemonDetailResponse.swift in Sources */,
 				25B46AAE230BAB4F00F5C97C /* MoveTableViewCell.swift in Sources */,
+				2509326A23121E7F00245774 /* UIImage+Extension.swift in Sources */,
 				9A34CC97230457DE00B4B6C6 /* MoveService.swift in Sources */,
 				25B46AAC230BAB4100F5C97C /* ItemTableViewCell.swift in Sources */,
 				73FA115B230404E60010AD7F /* ApiContext.swift in Sources */,

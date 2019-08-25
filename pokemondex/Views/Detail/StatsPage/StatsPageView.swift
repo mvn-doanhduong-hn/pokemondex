@@ -9,49 +9,54 @@
 import UIKit
 
 class StatsPageView: NibView {
-
-    @IBOutlet weak var statsStackView: UIStackView!
+  
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var basicStatsView: BasicStatsView!
+    @IBOutlet weak var weaknessesView: WeaknessesView!
+    @IBOutlet weak var breedingView: BreedingView!
     
     override func xibSetUp() {
         view = loadViewFromNib()
         view.frame = self.bounds
         view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         
-        addSubview(view)
+        setupView()
         
+        
+        addSubview(view)        
+    }
+    
+    func setupView() {
         setDataBaseStats()
+        setDataWeaknesses()
+        setDataBreeding()
+        
+        scrollView.updateContentView()
     }
     
     func setDataBaseStats() {
-        for subUIView in statsStackView.arrangedSubviews {
-            subUIView.removeFromSuperview()
+        var basicStatses: [BasicStats] = []
+        basicStatses.append(BasicStats(name: "HP", value: 175, maxValue: 200))
+        basicStatses.append(BasicStats(name: "ATK", value: 40, maxValue: 200))
+        basicStatses.append(BasicStats(name: "DEF", value: 40, maxValue: 200))
+        basicStatses.append(BasicStats(name: "S.ATK", value: 40, maxValue: 200))
+        basicStatses.append(BasicStats(name: "S.DEF", value: 40, maxValue: 200))
+        basicStatses.append(BasicStats(name: "SPD", value: 40, maxValue: 200))
+        
+        basicStatsView.setData(basicStatses)
+    }
+    
+    func setDataWeaknesses() {
+        var weaknesses: [Weakness] = []
+        for _ in 1...18 {
+            weaknesses.append(Weakness(type: .water, effect: 2))
         }
-        
-        let hpView = StatsView()
-        hpView.setData(name: "HP", value: 45, maxValue: 200)
-        statsStackView.addArrangedSubview(hpView)
-        
-        let atkView = StatsView()
-        atkView.setData(name: "ATK", value: 50, maxValue: 200)
-        statsStackView.addArrangedSubview(atkView)
-        
-        let defView = StatsView()
-        defView.setData(name: "DEF", value: 45, maxValue: 200)
-        statsStackView.addArrangedSubview(defView)
-        
-        let sAtkView = StatsView()
-        sAtkView.setData(name: "S.ATK", value: 45, maxValue: 200)
-        statsStackView.addArrangedSubview(sAtkView)
-        
-        let sDefView = StatsView()
-        sDefView.setData(name: "S.DEF", value: 45, maxValue: 200)
-        statsStackView.addArrangedSubview(sDefView)
-        
-        let speedView = StatsView()
-        speedView.setData(name: "SPD", value: 45, maxValue: 200)
-        statsStackView.addArrangedSubview(speedView)
-        
-        print(statsStackView.arrangedSubviews.count)
+        weaknessesView.setData(weaknesses)
+    }
+    
+    func setDataBreeding() {
+        let breeding = Breeding(eggGroups: ["Master", "Evil"], hatchTime: HatchTime(steps: 5100, cycles: 30), femaleGender: 36.9)
+        breedingView.setData(breeding: breeding)
     }
 }
 

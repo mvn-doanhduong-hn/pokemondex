@@ -12,6 +12,7 @@ target 'pokemondex' do
   pod 'Kingfisher'
   pod 'MXSegmentedPager', '~> 3.3.0'
   pod 'AlamofireImage', '~> 3.5'
+  pod 'GradientProgress'
 
   target 'pokemondexTests' do
     inherit! :search_paths

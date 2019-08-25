@@ -10,7 +10,7 @@ import Foundation
 
 enum ApiEnvironment: String { case
     
-    production = "http://192.168.1.51:8080/"
+    production = "http://localhost:8080/"
     
     var url: String {
         return rawValue

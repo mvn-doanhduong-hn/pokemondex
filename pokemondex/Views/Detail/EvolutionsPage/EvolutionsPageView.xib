@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EvolutionsPageView" customModule="pokemondex" customModuleProvider="target">
             <connections>
-                <outlet property="stackView" destination="gbx-aH-uAb" id="8SK-eK-91Y"/>
+                <outlet property="tableView" destination="lkl-K3-pFZ" id="uUu-Ih-9Ta"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,53 +20,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxH-IY-f8Y">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <subviews>
-                        <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gbx-aH-uAb">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="645"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2d-50-kXL" customClass="EvolutionView" customModule="pokemondex" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="97" id="dUC-s1-V7O"/>
-                                    </constraints>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zS-fo-AWJ" customClass="EvolutionView" customModule="pokemondex" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="137" width="414" height="97"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNE-Dv-9VS" customClass="EvolutionView" customModule="pokemondex" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="274" width="414" height="97"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1r0-1w-fRf" customClass="EvolutionView" customModule="pokemondex" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="411" width="414" height="97"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LT5-Y7-JkB" customClass="EvolutionView" customModule="pokemondex" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="548" width="414" height="97"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </view>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="gbx-aH-uAb" firstAttribute="top" secondItem="xxH-IY-f8Y" secondAttribute="top" id="4bB-f4-ys6"/>
-                        <constraint firstItem="gbx-aH-uAb" firstAttribute="leading" secondItem="xxH-IY-f8Y" secondAttribute="leading" id="XhF-7J-6ME"/>
-                        <constraint firstAttribute="bottom" secondItem="gbx-aH-uAb" secondAttribute="bottom" id="qPB-6Y-hse"/>
-                        <constraint firstAttribute="trailing" secondItem="gbx-aH-uAb" secondAttribute="trailing" id="r1M-vv-QF1"/>
-                    </constraints>
-                </scrollView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lkl-K3-pFZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="xxH-IY-f8Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LKN-An-AsR"/>
-                <constraint firstAttribute="trailing" secondItem="xxH-IY-f8Y" secondAttribute="trailing" id="Mb2-vy-h2k"/>
-                <constraint firstAttribute="bottom" secondItem="xxH-IY-f8Y" secondAttribute="bottom" id="Xkr-d1-w8d"/>
-                <constraint firstItem="gbx-aH-uAb" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="h2c-Hv-AIx"/>
-                <constraint firstItem="xxH-IY-f8Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s6F-pI-stF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lkl-K3-pFZ" secondAttribute="trailing" id="3sB-SK-h6P"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lkl-K3-pFZ" secondAttribute="bottom" id="7hh-dS-Syt"/>
+                <constraint firstItem="lkl-K3-pFZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="PnY-Cc-jdG"/>
+                <constraint firstItem="lkl-K3-pFZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sKk-Hz-i0M"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="131.8840579710145" y="100.44642857142857"/>

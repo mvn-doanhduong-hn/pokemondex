@@ -37,8 +37,11 @@ class MovesViewController: BaseViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let move = searchResults[indexPath.row] as! Move
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let detailViewController = storyBoard.instantiateViewController(withIdentifier: "moveDetailViewController") as! MoveDetailViewController
+        detailViewController.move = move
         self.present(detailViewController, animated: true, completion: nil)
     }
     

@@ -6,13 +6,13 @@
 //  Copyright © 2019 Pokemondex. All rights reserved.
 //
 
-import ObjectMapper
+import Foundation
 
 struct Move {
     var name: String
     var type: PokemonType
     var effects: String
     var power: Int
-    var accuracy: String
+    var accuracy: Int
     var pp: Int
 }

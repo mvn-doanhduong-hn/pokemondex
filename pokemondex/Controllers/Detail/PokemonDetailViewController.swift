@@ -18,8 +18,16 @@ class PokemonDetailViewController: MXSegmentedPagerController {
     
     let pokemonHeaderView = PokemonHeaderView()
     
+    private var service: AlamofirePokemonService!
+    var pokemon: Pokemon!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let env = ApiEnvironment.production
+        let context = NonPersistentApiContext(environment: env)
+        service = AlamofirePokemonService(context: context)
+        
         settingPagerView()
         fetchData()
     }
@@ -28,8 +36,6 @@ class PokemonDetailViewController: MXSegmentedPagerController {
         segmentedPager.backgroundColor = .white
         
         // Parallax Headerok
-        
-        
         segmentedPager.parallaxHeader.view = pokemonHeaderView
         pokemonHeaderView.backButton.addTarget(self, action: #selector(backAction), for: .touchUpInside)
         segmentedPager.parallaxHeader.mode = .fill
@@ -45,11 +51,10 @@ class PokemonDetailViewController: MXSegmentedPagerController {
         
         segmentedPager.segmentedControl.selectionIndicatorLocation = .down
         segmentedPager.segmentedControl.backgroundColor = .white
-        segmentedPager.segmentedControl.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor(hexString: "559EDF")]
-        segmentedPager.segmentedControl.selectedTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.blue]
+        segmentedPager.segmentedControl.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.darkGray]
+        segmentedPager.segmentedControl.selectedTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor(hexString: "1C8BED")]
         segmentedPager.segmentedControl.selectionStyle = .arrow
-        segmentedPager.segmentedControl.selectionIndicatorColor = .blue
-        
+        segmentedPager.segmentedControl.selectionIndicatorColor = UIColor(hexString: "1C8BED")        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -102,44 +107,33 @@ class PokemonDetailViewController: MXSegmentedPagerController {
     }
     
     func fetchData() {
+        service.getPokemon(id: self.pokemon.id, completion: { (pokemon, error) in
+            if let error = error {
+                return print(error.localizedDescription)
+            }
+            
+//            let evolutionPage = self.viewPages[1] as! EvolutionsPageView
+//            evolutionPage.setData(evolutions)
+            
+        })
+        
         setDataEvolutionsPage()
         setDataMovesPage()
     }
     
     func setDataEvolutionsPage() {
-//        let evolutionPage = viewPages[1] as! EvolutionsPageView
-//
-//        for subUIView in evolutionPage.stackView.arrangedSubviews as [UIView] {
-//            subUIView.removeFromSuperview()
-//        }
-        
-//        let view = EvolutionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 97))
-//        view.setContentHuggingPriority(.defaultHigh, for: .vertical)
-//        view.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
-//        evolutionPage.stackView.addArrangedSubview(view)
-//        evolutionPage.stackView.addArrangedSubview(EvolutionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 97)))
-//        evolutionPage.stackView.addArrangedSubview(EvolutionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 97)))
-//        evolutionPage.stackView.addArrangedSubview(EvolutionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 97)))
-//        evolutionPage.stackView.addArrangedSubview(EvolutionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 97)))
-//        evolutionPage.stackView.addArrangedSubview(EvolutionView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 97)))
-//        print(evolutionPage.stackView.arrangedSubviews.count)
-//        for item in viewPages {
-////            let view =
-////            view.frame = CGRect(x: 0, y: 0, width: (evolutionPage.frame.width), height: 96)
-//            evolutionPage.stackView.addArrangedSubview(EvolutionView())
-//            evolutionPage.stackView.addArrangedSubview(EvolutionView())
-//        }
-//        evolutionPage.stackView.distribution = .fillEqually
-//        evolutionPage.stackView.translatesAutoresizingMaskIntoConstraints = false
-//
-//        print(evolutionPage.stackView.arrangedSubviews.count)
-      
+        var evolutions: [Evolution] = []
+        evolutions.append(Evolution(pokemonImage: "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/charmander.png", pokemonName: "Charmander", evolutionPokemonImage: "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/charmeleon.png", evolutionPokemonName: "Charmeleon", evolutionLevel: 16))
+        evolutions.append(Evolution(pokemonImage: "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/charmeleon.png", pokemonName: "Charmeleon", evolutionPokemonImage: "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/charizard.png", evolutionPokemonName: "Charizard", evolutionLevel: 36))
+       
+        let evolutionPage = viewPages[1] as! EvolutionsPageView
+        evolutionPage.setData(evolutions)
     }
     
     func setDataMovesPage() {
         
         var moves: [Move] = []
-        moves.append(Move(name: "Bug", type: PokemonType.bug, effects: "This is a effects", power: 10, accuracy: "100", pp: 5))
+        moves.append(Move(name: "Bug", type: PokemonType.bug, effects: "This is a effects", power: 10, accuracy: 100, pp: 5))
         
          let movesPage = viewPages[2] as! MovesPageView
         movesPage.setData(moves)

@@ -1,15 +1,15 @@
 //
-//  EvolutionView.swift
+//  AbilitiesView.swift
 //  pokemondex
 //
-//  Created by LTT on 8/22/19.
+//  Created by LTT on 8/24/19.
 //  Copyright © 2019 Pokemondex. All rights reserved.
 //
 
 import UIKit
 
-class EvolutionView: NibView {
-
+class AbilitiesView: NibView {
+    
     override func xibSetUp() {
         view = loadViewFromNib()
         view.frame = self.bounds

@@ -11,10 +11,11 @@ import AlamofireObjectMapper
 
 class AlamofirePokemonService: AlamofireService, PokemonService {
     
-    func getPokemon(id: String, completion: @escaping PokemonResult) {
-        get(at: .pokemon(id: id)).responseObject { (response: DataResponse<ApiPokemon>) in
-            let result = response.result.value?.convert()
-            completion(result, response.result.error)
+    func getPokemon(id: String, completion: @escaping PokemonDetailResult) {
+        get(at: .pokemon(id: id)).responseObject { (response: DataResponse<ApiPokemonDetail>) in
+            print(response.result.value?.toJSONString())
+          //  let result = response.result.value?.convert()
+            //completion(result, response.result.error)
         }
     }
     
